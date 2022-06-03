@@ -30,7 +30,7 @@ struct ScrollingLazyVStack<CustomHeader: View, Content: View>: View {
     var body: some View {
         ScrollViewWithOffset(offsetChanged: offsetChanged) {
             LazyVStack(alignment: .leading, spacing: 0) {
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 0) {
                     if let customHeader = customHeader {
                         customHeader
                     }
